@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>Powerup.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@45d46254_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@45d46254_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package pt.up.fe.bomberman.model.game.elements;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@45d46254_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@45d46254_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@45d46254_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@45d46254_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>public class Powerup extends Element {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@45d46254_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@45d46254_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    public enum EFFECT {BOMBS, FLAMES, SPEED, WALLPASS, HEALTH, BOMBPASS, FLAMEPASS}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@45d46254_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@45d46254_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private final EFFECT effect;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@45d46254_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@45d46254_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@45d46254_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@45d46254_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public Powerup(int x, int y, EFFECT effect) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@45d46254_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@45d46254_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        super(x, y);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@45d46254_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@45d46254_9'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.effect = effect;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@45d46254_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@45d46254_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@45d46254_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@45d46254_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@45d46254_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@45d46254_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public EFFECT getEffect() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@45d46254_13'/>
+13
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@45d46254_13'>1</a>
+<span>
+
+1. getEffect : replaced return value with null for pt/up/fe/bomberman/model/game/elements/Powerup::getEffect &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return effect;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@45d46254_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@45d46254_14'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@45d46254_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@45d46254_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@45d46254_13'>13</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@45d46254_13'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getEffect<br/><b>Killed by : </b>pt.up.fe.bomberman.viewer.game.PowerupViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.PowerupViewerTest]/[method:drawElementBombs()]</span></span> replaced return value with null for pt/up/fe/bomberman/model/game/elements/Powerup::getEffect &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+
+<li class='mutator'>BOOLEAN_FALSE_RETURN</li>
+
+<li class='mutator'>BOOLEAN_TRUE_RETURN</li>
+
+<li class='mutator'>CONDITIONALS_BOUNDARY_MUTATOR</li>
+
+<li class='mutator'>EMPTY_RETURN_VALUES</li>
+
+<li class='mutator'>INCREMENTS_MUTATOR</li>
+
+<li class='mutator'>INVERT_NEGS_MUTATOR</li>
+
+<li class='mutator'>MATH_MUTATOR</li>
+
+<li class='mutator'>NEGATE_CONDITIONALS_MUTATOR</li>
+
+<li class='mutator'>NULL_RETURN_VALUES</li>
+
+<li class='mutator'>PRIMITIVE_RETURN_VALS_MUTATOR</li>
+
+<li class='mutator'>VOID_METHOD_CALL_MUTATOR</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>pt.up.fe.bomberman.viewer.game.PowerupViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.PowerupViewerTest]/[method:drawElementSpeed()] (3 ms)</li><li>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getHealth()] (3 ms)</li><li>pt.up.fe.bomberman.viewer.game.GameViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.GameViewerTest]/[method:drawWalls()] (6 ms)</li><li>pt.up.fe.bomberman.viewer.game.PowerupViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.PowerupViewerTest]/[method:drawElementHealth()] (3 ms)</li><li>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getFlamepass()] (5 ms)</li><li>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getWallpass()] (5 ms)</li><li>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getBombs()] (4 ms)</li><li>pt.up.fe.bomberman.viewer.game.GameViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.GameViewerTest]/[method:drawFlames()] (5 ms)</li><li>pt.up.fe.bomberman.viewer.game.GameViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.GameViewerTest]/[method:drawEnemies()] (11 ms)</li><li>pt.up.fe.bomberman.viewer.game.GameViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.GameViewerTest]/[method:drawObstacles()] (4 ms)</li><li>pt.up.fe.bomberman.viewer.game.PowerupViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.PowerupViewerTest]/[method:drawElementWallpass()] (3 ms)</li><li>pt.up.fe.bomberman.viewer.game.PowerupViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.PowerupViewerTest]/[method:drawElementFlames()] (5 ms)</li><li>pt.up.fe.bomberman.viewer.game.PowerupViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.PowerupViewerTest]/[method:drawElementBombs()] (2 ms)</li><li>pt.up.fe.bomberman.viewer.game.PowerupViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.PowerupViewerTest]/[method:drawElementBombpass()] (5 ms)</li><li>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getFlames()] (3 ms)</li><li>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getSpeed()] (5 ms)</li><li>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getBombpass()] (4 ms)</li><li>pt.up.fe.bomberman.model.game.arena.ArenaTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.model.game.arena.ArenaTest]/[method:getPowerup()] (5 ms)</li><li>pt.up.fe.bomberman.viewer.game.GameViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.GameViewerTest]/[method:drawPowerups()] (7 ms)</li><li>pt.up.fe.bomberman.viewer.game.PowerupViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.PowerupViewerTest]/[method:drawElementFlamepass()] (5 ms)</li><li>pt.up.fe.bomberman.viewer.game.GameViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.GameViewerTest]/[method:refreshAndClear()] (5 ms)</li><li>pt.up.fe.bomberman.controller.game.BombControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombControllerTest]/[method:explodeBomb()] (8 ms)</li><li>pt.up.fe.bomberman.viewer.game.GameViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.GameViewerTest]/[method:drawBombs()] (4 ms)</li><li>pt.up.fe.bomberman.viewer.game.GameViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.GameViewerTest]/[method:drawBomberman()] (4 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.6.3
+
+</body>
+</html>

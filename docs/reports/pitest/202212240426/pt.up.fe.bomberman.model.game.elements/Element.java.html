@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>Element.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5cdda548_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5cdda548_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package pt.up.fe.bomberman.model.game.elements;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5cdda548_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5cdda548_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5cdda548_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5cdda548_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import pt.up.fe.bomberman.model.Position;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5cdda548_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5cdda548_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5cdda548_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5cdda548_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>public abstract class Element {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5cdda548_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5cdda548_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private Position position;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5cdda548_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5cdda548_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    public Element(int x, int y) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5cdda548_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5cdda548_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        position = new Position(x, y);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5cdda548_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5cdda548_9'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5cdda548_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5cdda548_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public Position getPosition() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5cdda548_11'/>
+11
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5cdda548_11'>1</a>
+<span>
+
+1. getPosition : replaced return value with null for pt/up/fe/bomberman/model/game/elements/Element::getPosition &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return position;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5cdda548_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5cdda548_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5cdda548_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5cdda548_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void setPosition(Position position) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5cdda548_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5cdda548_14'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.position = position;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5cdda548_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5cdda548_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5cdda548_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5cdda548_16'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@5cdda548_11'>11</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@5cdda548_11'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getPosition<br/><b>Killed by : </b>pt.up.fe.bomberman.model.game.arena.ArenaTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.model.game.arena.ArenaTest]/[method:isBombFalse()]</span></span> replaced return value with null for pt/up/fe/bomberman/model/game/elements/Element::getPosition &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+
+<li class='mutator'>BOOLEAN_FALSE_RETURN</li>
+
+<li class='mutator'>BOOLEAN_TRUE_RETURN</li>
+
+<li class='mutator'>CONDITIONALS_BOUNDARY_MUTATOR</li>
+
+<li class='mutator'>EMPTY_RETURN_VALUES</li>
+
+<li class='mutator'>INCREMENTS_MUTATOR</li>
+
+<li class='mutator'>INVERT_NEGS_MUTATOR</li>
+
+<li class='mutator'>MATH_MUTATOR</li>
+
+<li class='mutator'>NEGATE_CONDITIONALS_MUTATOR</li>
+
+<li class='mutator'>NULL_RETURN_VALUES</li>
+
+<li class='mutator'>PRIMITIVE_RETURN_VALS_MUTATOR</li>
+
+<li class='mutator'>VOID_METHOD_CALL_MUTATOR</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:canCreateBombObstacle()] (7 ms)</li><li>pt.up.fe.bomberman.viewer.game.BombermanViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.BombermanViewerTest]/[method:drawElementDown()] (3 ms)</li><li>pt.up.fe.bomberman.controller.game.FlameControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.FlameControllerTest]/[method:removeObstacle()] (4 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanLeftEnemy()] (6 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanUpBomb()] (3 ms)</li><li>pt.up.fe.bomberman.controller.game.BombControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombControllerTest]/[method:explodeBombEnemies()] (5 ms)</li><li>pt.up.fe.bomberman.model.game.arena.ArenaTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.model.game.arena.ArenaTest]/[method:isWallTrue()] (5 ms)</li><li>pt.up.fe.bomberman.model.game.arena.ArenaTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.model.game.arena.ArenaTest]/[method:getPowerup()] (5 ms)</li><li>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:useWallpass()] (6 ms)</li><li>pt.up.fe.bomberman.viewer.game.GameViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.GameViewerTest]/[method:drawWalls()] (6 ms)</li><li>pt.up.fe.bomberman.viewer.game.EnemyViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.EnemyViewerTest]/[method:drawElementKondoria()] (4 ms)</li><li>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:useHealth()] (5 ms)</li><li>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getFlamepass()] (5 ms)</li><li>pt.up.fe.bomberman.viewer.game.PowerupViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.PowerupViewerTest]/[method:drawElementWallpass()] (3 ms)</li><li>pt.up.fe.bomberman.viewer.game.PowerupViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.PowerupViewerTest]/[method:drawElementFlames()] (5 ms)</li><li>pt.up.fe.bomberman.viewer.game.FlameViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.FlameViewerTest]/[method:drawElementVertical()] (4 ms)</li><li>pt.up.fe.bomberman.viewer.game.PowerupViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.PowerupViewerTest]/[method:drawElementBombs()] (2 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanRightWall()] (3 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanDownEmpty()] (7 ms)</li><li>pt.up.fe.bomberman.viewer.game.EnemyViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.EnemyViewerTest]/[method:drawElementOneal()] (3 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanLeftWall()] (6 ms)</li><li>pt.up.fe.bomberman.controller.game.BombControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombControllerTest]/[method:explodeBombBombs()] (5 ms)</li><li>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:useFlames()] (6 ms)</li><li>pt.up.fe.bomberman.model.game.arena.ArenaTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.model.game.arena.ArenaTest]/[method:isPowerupTrue()] (4 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanRightBomb()] (5 ms)</li><li>pt.up.fe.bomberman.viewer.game.PowerupViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.PowerupViewerTest]/[method:drawElementHealth()] (3 ms)</li><li>pt.up.fe.bomberman.viewer.game.PowerupViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.PowerupViewerTest]/[method:drawElementBombpass()] (5 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanUpEnemy()] (5 ms)</li><li>pt.up.fe.bomberman.viewer.game.EnemyViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.EnemyViewerTest]/[method:drawElementOvapi()] (4 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:canCreateBombEmpty()] (9 ms)</li><li>pt.up.fe.bomberman.model.game.arena.ArenaTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.model.game.arena.ArenaTest]/[method:isObstacleFalse()] (5 ms)</li><li>pt.up.fe.bomberman.controller.game.EnemyControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.EnemyControllerTest]/[method:moveEnemyWall()] (4 ms)</li><li>pt.up.fe.bomberman.viewer.game.WallViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.WallViewerTest]/[method:drawElement()] (4 ms)</li><li>pt.up.fe.bomberman.viewer.game.EnemyViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.EnemyViewerTest]/[method:drawElementPass()] (3 ms)</li><li>pt.up.fe.bomberman.viewer.game.EnemyViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.EnemyViewerTest]/[method:drawElementDoll()] (3 ms)</li><li>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:useBombs()] (7 ms)</li><li>pt.up.fe.bomberman.controller.game.EnemyControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.EnemyControllerTest]/[method:moveEnemyEnemy()] (6 ms)</li><li>pt.up.fe.bomberman.controller.game.FlameControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.FlameControllerTest]/[method:decreaseBombermanHp()] (4 ms)</li><li>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getWallpass()] (5 ms)</li><li>pt.up.fe.bomberman.viewer.game.EnemyViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.EnemyViewerTest]/[method:drawElementMinvo()] (4 ms)</li><li>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getBombs()] (4 ms)</li><li>pt.up.fe.bomberman.viewer.game.GameViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.GameViewerTest]/[method:drawObstacles()] (4 ms)</li><li>pt.up.fe.bomberman.viewer.game.ObstacleViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.ObstacleViewerTest]/[method:drawElement()] (4 ms)</li><li>pt.up.fe.bomberman.viewer.game.FlameViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.FlameViewerTest]/[method:drawElementCentral()] (4 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:canCreateBombPowerup()] (6 ms)</li><li>pt.up.fe.bomberman.controller.game.EnemyControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.EnemyControllerTest]/[method:moveEnemyBomb()] (4 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanDownObstacle()] (6 ms)</li><li>pt.up.fe.bomberman.model.game.arena.ArenaTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.model.game.arena.ArenaTest]/[method:isPowerupFalse()] (4 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanUpEmpty()] (4 ms)</li><li>pt.up.fe.bomberman.viewer.game.BombermanViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.BombermanViewerTest]/[method:drawElementRight()] (3 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:canCreateBombEnemy()] (8 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanUpObstacle()] (4 ms)</li><li>pt.up.fe.bomberman.model.game.arena.ArenaTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.model.game.arena.ArenaTest]/[method:isFlameTrue()] (4 ms)</li><li>pt.up.fe.bomberman.controller.game.BombControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombControllerTest]/[method:explodeBombWalls()] (4 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanRightEnemy()] (5 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanUpWall()] (3 ms)</li><li>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getFlames()] (3 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanUpFlame()] (4 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanRightObstacle()] (5 ms)</li><li>pt.up.fe.bomberman.controller.game.EnemyControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.EnemyControllerTest]/[method:moveEnemyBomberman()] (3 ms)</li><li>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:useFlamepass()] (5 ms)</li><li>pt.up.fe.bomberman.controller.game.EnemyControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.EnemyControllerTest]/[method:moveEnemyEmpty()] (15 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanLeftBomb()] (5 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanDownBomb()] (6 ms)</li><li>pt.up.fe.bomberman.model.game.arena.ArenaTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.model.game.arena.ArenaTest]/[method:isWallFalse()] (5 ms)</li><li>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getHealth()] (3 ms)</li><li>pt.up.fe.bomberman.controller.game.FlameControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.FlameControllerTest]/[method:removeEnemy()] (4 ms)</li><li>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getSpeed()] (5 ms)</li><li>pt.up.fe.bomberman.model.game.arena.ArenaTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.model.game.arena.ArenaTest]/[method:isFlameFalse()] (4 ms)</li><li>pt.up.fe.bomberman.viewer.game.FlameViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.FlameViewerTest]/[method:drawElementHorizontal()] (4 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanLeftObstacle()] (5 ms)</li><li>pt.up.fe.bomberman.model.game.arena.ArenaTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.model.game.arena.ArenaTest]/[method:isObstacleTrue()] (4 ms)</li><li>pt.up.fe.bomberman.viewer.game.BombermanViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.BombermanViewerTest]/[method:drawElementLeft()] (4 ms)</li><li>pt.up.fe.bomberman.viewer.game.GameViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.GameViewerTest]/[method:drawBomberman()] (4 ms)</li><li>pt.up.fe.bomberman.viewer.game.PowerupViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.PowerupViewerTest]/[method:drawElementSpeed()] (3 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:canCreateBombWall()] (6 ms)</li><li>pt.up.fe.bomberman.viewer.game.GameViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.GameViewerTest]/[method:drawFlames()] (5 ms)</li><li>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:useBombpass()] (6 ms)</li><li>pt.up.fe.bomberman.controller.game.BombControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombControllerTest]/[method:explodeBombBomberman()] (8 ms)</li><li>pt.up.fe.bomberman.controller.game.BombControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombControllerTest]/[method:explodeBombObstacles()] (5 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanLeftEmpty()] (4 ms)</li><li>pt.up.fe.bomberman.viewer.game.GameViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.GameViewerTest]/[method:drawPowerups()] (7 ms)</li><li>pt.up.fe.bomberman.model.game.arena.ArenaTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.model.game.arena.ArenaTest]/[method:removeObstacle()] (4 ms)</li><li>pt.up.fe.bomberman.viewer.game.PowerupViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.PowerupViewerTest]/[method:drawElementFlamepass()] (5 ms)</li><li>pt.up.fe.bomberman.viewer.game.EnemyViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.EnemyViewerTest]/[method:drawElementPontan()] (4 ms)</li><li>pt.up.fe.bomberman.controller.game.BombControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombControllerTest]/[method:explodeBomb()] (8 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanRightEmpty()] (5 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanRightFlame()] (6 ms)</li><li>pt.up.fe.bomberman.viewer.game.BombermanViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.BombermanViewerTest]/[method:drawElementUp()] (4 ms)</li><li>pt.up.fe.bomberman.viewer.game.EnemyViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.EnemyViewerTest]/[method:drawElementBalloom()] (4 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanLeftFlame()] (5 ms)</li><li>pt.up.fe.bomberman.controller.game.BombControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombControllerTest]/[method:explodeBombPowerups()] (5 ms)</li><li>pt.up.fe.bomberman.viewer.game.BombViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.BombViewerTest]/[method:drawElement()] (9 ms)</li><li>pt.up.fe.bomberman.controller.game.EnemyControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.EnemyControllerTest]/[method:moveEnemyObstacle()] (5 ms)</li><li>pt.up.fe.bomberman.viewer.game.GameViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.GameViewerTest]/[method:drawEnemies()] (11 ms)</li><li>pt.up.fe.bomberman.model.game.arena.ArenaTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.model.game.arena.ArenaTest]/[method:isBombTrue()] (4 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanDownWall()] (5 ms)</li><li>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getBombpass()] (4 ms)</li><li>pt.up.fe.bomberman.model.game.arena.ArenaTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.model.game.arena.ArenaTest]/[method:isBombFalse()] (4 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanDownFlame()] (6 ms)</li><li>pt.up.fe.bomberman.viewer.game.GameViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.GameViewerTest]/[method:refreshAndClear()] (5 ms)</li><li>pt.up.fe.bomberman.viewer.game.GameViewerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.viewer.game.GameViewerTest]/[method:drawBombs()] (4 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanDownEnemy()] (8 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.6.3
+
+</body>
+</html>

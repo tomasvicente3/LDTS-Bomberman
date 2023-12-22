@@ -1,0 +1,2250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>BombermanController.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package pt.up.fe.bomberman.controller.game;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import pt.up.fe.bomberman.Game;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import pt.up.fe.bomberman.gui.GUI;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import pt.up.fe.bomberman.model.Position;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import pt.up.fe.bomberman.model.game.arena.Arena;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import pt.up.fe.bomberman.model.game.elements.Bomb;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import pt.up.fe.bomberman.model.game.elements.Powerup;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_9'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>public class BombermanController extends GameController {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    private long lastMovementTime = 0;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public BombermanController(Arena arena) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        super(arena);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_14'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_16'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void moveBombermanUp() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_17'/>
+17
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_17'>1</a>
+<span>
+
+1. moveBombermanUp : removed call to pt/up/fe/bomberman/model/game/elements/Bomberman::setDirection &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        getModel().getBomberman().setDirection(&#39;U&#39;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_18'/>
+18
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_18'>1</a>
+<span>
+
+1. moveBombermanUp : removed call to pt/up/fe/bomberman/controller/game/BombermanController::moveBomberman &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        moveBomberman(getModel().getBomberman().getPosition().getUp());</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_19'/>
+19
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_19'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_20'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_21'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void moveBombermanDown() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_22'/>
+22
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_22'>1</a>
+<span>
+
+1. moveBombermanDown : removed call to pt/up/fe/bomberman/model/game/elements/Bomberman::setDirection &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        getModel().getBomberman().setDirection(&#39;D&#39;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_23'/>
+23
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_23'>1</a>
+<span>
+
+1. moveBombermanDown : removed call to pt/up/fe/bomberman/controller/game/BombermanController::moveBomberman &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        moveBomberman(getModel().getBomberman().getPosition().getDown());</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_24'/>
+24
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_24'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_25'/>
+25
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_25'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_26'/>
+26
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_26'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void moveBombermanLeft() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_27'/>
+27
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_27'>1</a>
+<span>
+
+1. moveBombermanLeft : removed call to pt/up/fe/bomberman/model/game/elements/Bomberman::setDirection &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        getModel().getBomberman().setDirection(&#39;L&#39;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_28'/>
+28
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_28'>1</a>
+<span>
+
+1. moveBombermanLeft : removed call to pt/up/fe/bomberman/controller/game/BombermanController::moveBomberman &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        moveBomberman(getModel().getBomberman().getPosition().getLeft());</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_29'/>
+29
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_29'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_30'/>
+30
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_30'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_31'/>
+31
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_31'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void moveBombermanRight() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_32'/>
+32
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_32'>1</a>
+<span>
+
+1. moveBombermanRight : removed call to pt/up/fe/bomberman/model/game/elements/Bomberman::setDirection &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        getModel().getBomberman().setDirection(&#39;R&#39;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_33'/>
+33
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_33'>1</a>
+<span>
+
+1. moveBombermanRight : removed call to pt/up/fe/bomberman/controller/game/BombermanController::moveBomberman &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        moveBomberman(getModel().getBomberman().getPosition().getRight());</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_34'/>
+34
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_34'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_35'/>
+35
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_35'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_36'/>
+36
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_36'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private boolean canMove(Position position) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_37'/>
+37
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_37'>2</a>
+<span>
+
+1. canMove : replaced boolean return with true for pt/up/fe/bomberman/controller/game/BombermanController::canMove &rarr; KILLED<br/>
+
+2. canMove : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return getModel().inArena(position)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_38'/>
+38
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_38'>2</a>
+<span>
+
+1. canMove : negated conditional &rarr; KILLED<br/>
+
+2. canMove : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                &#38;&#38; (!getModel().isBomb(position) || getModel().getBomberman().canBombpass())</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_39'/>
+39
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_39'>2</a>
+<span>
+
+1. canMove : negated conditional &rarr; KILLED<br/>
+
+2. canMove : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                &#38;&#38; (!getModel().isObstacle(position) || getModel().getBomberman().canWallpass())</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_40'/>
+40
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_40'>1</a>
+<span>
+
+1. canMove : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                &#38;&#38; !getModel().isWall(position);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_41'/>
+41
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_41'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_42'/>
+42
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_42'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_43'/>
+43
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_43'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private void moveBomberman(Position position) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_44'/>
+44
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_44'>1</a>
+<span>
+
+1. moveBomberman : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (canMove(position)) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_45'/>
+45
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_45'>1</a>
+<span>
+
+1. moveBomberman : removed call to pt/up/fe/bomberman/model/game/elements/Bomberman::setPosition &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            getModel().getBomberman().setPosition(position);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_46'/>
+46
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_46'>3</a>
+<span>
+
+1. moveBomberman : negated conditional &rarr; KILLED<br/>
+
+2. moveBomberman : negated conditional &rarr; KILLED<br/>
+
+3. moveBomberman : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            if (getModel().isEnemy(position) || (getModel().isFlame(position) &#38;&#38; !getModel().getBomberman().canFlamepass()))</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_47'/>
+47
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_47'>2</a>
+<span>
+
+1. moveBomberman : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+2. moveBomberman : removed call to pt/up/fe/bomberman/model/game/elements/Bomberman::setHp &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                getModel().getBomberman().setHp(getModel().getBomberman().getHp() - 1);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_48'/>
+48
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_48'>2</a>
+<span>
+
+1. moveBomberman : negated conditional &rarr; KILLED<br/>
+
+2. moveBomberman : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            if (getModel().isPowerup(position) &#38;&#38; !getModel().isObstacle(position)) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_49'/>
+49
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_49'>1</a>
+<span>
+
+1. moveBomberman : removed call to pt/up/fe/bomberman/controller/game/BombermanController::applyEffect &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                applyEffect(getModel().getPowerup(position));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_50'/>
+50
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_50'>1</a>
+<span>
+
+1. moveBomberman : removed call to pt/up/fe/bomberman/model/game/arena/Arena::removePowerup &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>                getModel().removePowerup(position);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_51'/>
+51
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_51'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_52'/>
+52
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_52'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_53'/>
+53
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_53'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_54'/>
+54
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_54'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_55'/>
+55
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_55'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private void applyEffect(Powerup powerup) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_56'/>
+56
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_56'>1</a>
+<span>
+
+1. applyEffect : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (powerup.getEffect() == Powerup.EFFECT.BOMBS)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_57'/>
+57
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_57'>2</a>
+<span>
+
+1. applyEffect : Replaced integer addition with subtraction &rarr; KILLED<br/>
+
+2. applyEffect : removed call to pt/up/fe/bomberman/model/game/elements/Bomberman::setBombs &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            getModel().getBomberman().setBombs(getModel().getBomberman().getBombs() + 1);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_58'/>
+58
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_58'>1</a>
+<span>
+
+1. applyEffect : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        else if (powerup.getEffect() == Powerup.EFFECT.FLAMES)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_59'/>
+59
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_59'>2</a>
+<span>
+
+1. applyEffect : Replaced integer addition with subtraction &rarr; KILLED<br/>
+
+2. applyEffect : removed call to pt/up/fe/bomberman/model/game/elements/Bomberman::setFlames &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            getModel().getBomberman().setFlames(getModel().getBomberman().getFlames() + 1);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_60'/>
+60
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_60'>1</a>
+<span>
+
+1. applyEffect : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        else if (powerup.getEffect() == Powerup.EFFECT.SPEED)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_61'/>
+61
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_61'>2</a>
+<span>
+
+1. applyEffect : Replaced integer addition with subtraction &rarr; KILLED<br/>
+
+2. applyEffect : removed call to pt/up/fe/bomberman/model/game/elements/Bomberman::setSpeed &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            getModel().getBomberman().setSpeed(getModel().getBomberman().getSpeed() + 1);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_62'/>
+62
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_62'>1</a>
+<span>
+
+1. applyEffect : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        else if (powerup.getEffect() == Powerup.EFFECT.WALLPASS)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_63'/>
+63
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_63'>1</a>
+<span>
+
+1. applyEffect : removed call to pt/up/fe/bomberman/model/game/elements/Bomberman::setWallpass &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            getModel().getBomberman().setWallpass(true);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_64'/>
+64
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_64'>1</a>
+<span>
+
+1. applyEffect : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        else if (powerup.getEffect() == Powerup.EFFECT.HEALTH)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_65'/>
+65
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_65'>2</a>
+<span>
+
+1. applyEffect : Replaced integer addition with subtraction &rarr; KILLED<br/>
+
+2. applyEffect : removed call to pt/up/fe/bomberman/model/game/elements/Bomberman::setHp &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            getModel().getBomberman().setHp(getModel().getBomberman().getHp() + 1);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_66'/>
+66
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_66'>1</a>
+<span>
+
+1. applyEffect : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        else if (powerup.getEffect() == Powerup.EFFECT.BOMBPASS)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_67'/>
+67
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_67'>1</a>
+<span>
+
+1. applyEffect : removed call to pt/up/fe/bomberman/model/game/elements/Bomberman::setBombpass &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            getModel().getBomberman().setBombpass(true);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_68'/>
+68
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_68'>1</a>
+<span>
+
+1. applyEffect : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        else if (powerup.getEffect() == Powerup.EFFECT.FLAMEPASS)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_69'/>
+69
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_69'>1</a>
+<span>
+
+1. applyEffect : removed call to pt/up/fe/bomberman/model/game/elements/Bomberman::setFlamepass &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            getModel().getBomberman().setFlamepass(true);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_70'/>
+70
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_70'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_71'/>
+71
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_71'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_72'/>
+72
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_72'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private boolean canCreateBomb() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_73'/>
+73
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_73'>4</a>
+<span>
+
+1. canCreateBomb : changed conditional boundary &rarr; SURVIVED<br/>
+
+2. canCreateBomb : Replaced integer subtraction with addition &rarr; SURVIVED<br/>
+
+3. canCreateBomb : replaced boolean return with true for pt/up/fe/bomberman/controller/game/BombermanController::canCreateBomb &rarr; KILLED<br/>
+
+4. canCreateBomb : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        return getModel().getBomberman().getBombs() - getModel().getBombs().size() &#62; 0</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_74'/>
+74
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_74'>1</a>
+<span>
+
+1. canCreateBomb : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                &#38;&#38; !getModel().isBomb(getModel().getBomberman().getPosition())</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_75'/>
+75
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_75'>1</a>
+<span>
+
+1. canCreateBomb : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                &#38;&#38; !getModel().isObstacle(getModel().getBomberman().getPosition())</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_76'/>
+76
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_76'>1</a>
+<span>
+
+1. canCreateBomb : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                &#38;&#38; !getModel().isWall(getModel().getBomberman().getPosition())</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_77'/>
+77
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_77'>1</a>
+<span>
+
+1. canCreateBomb : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                &#38;&#38; !getModel().isPowerup(getModel().getBomberman().getPosition());</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_78'/>
+78
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_78'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_79'/>
+79
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_79'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_80'/>
+80
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_80'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Override</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_81'/>
+81
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_81'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void step(Game game, GUI.ACTION action, long time) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_82'/>
+82
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_82'>4</a>
+<span>
+
+1. step : changed conditional boundary &rarr; SURVIVED<br/>
+
+2. step : Replaced long subtraction with addition &rarr; SURVIVED<br/>
+
+3. step : Replaced integer division with multiplication &rarr; SURVIVED<br/>
+
+4. step : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        if (time - lastMovementTime &#62; 100/getModel().getBomberman().getSpeed()) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_83'/>
+83
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_83'>1</a>
+<span>
+
+1. step : negated conditional &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>            if (action != GUI.ACTION.NONE)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_84'/>
+84
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_84'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                lastMovementTime = time;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_85'/>
+85
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_85'>1</a>
+<span>
+
+1. step : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            if (action == GUI.ACTION.UP)</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_86'/>
+86
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_86'>1</a>
+<span>
+
+1. step : removed call to pt/up/fe/bomberman/controller/game/BombermanController::moveBombermanUp &rarr; NO_COVERAGE<br/>
+
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>                moveBombermanUp();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_87'/>
+87
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_87'>1</a>
+<span>
+
+1. step : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            else if (action == GUI.ACTION.RIGHT)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_88'/>
+88
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_88'>1</a>
+<span>
+
+1. step : removed call to pt/up/fe/bomberman/controller/game/BombermanController::moveBombermanRight &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                moveBombermanRight();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_89'/>
+89
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_89'>1</a>
+<span>
+
+1. step : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            else if (action == GUI.ACTION.DOWN)</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_90'/>
+90
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_90'>1</a>
+<span>
+
+1. step : removed call to pt/up/fe/bomberman/controller/game/BombermanController::moveBombermanDown &rarr; NO_COVERAGE<br/>
+
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>                moveBombermanDown();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_91'/>
+91
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_91'>1</a>
+<span>
+
+1. step : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            else if (action == GUI.ACTION.LEFT)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_92'/>
+92
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_92'>1</a>
+<span>
+
+1. step : removed call to pt/up/fe/bomberman/controller/game/BombermanController::moveBombermanLeft &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                moveBombermanLeft();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_93'/>
+93
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_93'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_94'/>
+94
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_94'>2</a>
+<span>
+
+1. step : negated conditional &rarr; KILLED<br/>
+
+2. step : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (action == GUI.ACTION.SPACE &#38;&#38; canCreateBomb())</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_95'/>
+95
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_95'>1</a>
+<span>
+
+1. step : removed call to pt/up/fe/bomberman/model/game/arena/Arena::addBomb &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            getModel().addBomb(new Bomb(getModel().getBomberman().getPosition().getX(), getModel().getBomberman().getPosition().getY(), time, getModel().getBomberman().getFlames()));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_96'/>
+96
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_96'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_97'/>
+97
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_97'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_17'>17</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_17'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>moveBombermanUp<br/><b>Killed by : </b>none</span></span> removed call to pt/up/fe/bomberman/model/game/elements/Bomberman::setDirection &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_18'>18</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_18'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>moveBombermanUp<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanUpEmpty()]</span></span> removed call to pt/up/fe/bomberman/controller/game/BombermanController::moveBomberman &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_22'>22</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_22'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>moveBombermanDown<br/><b>Killed by : </b>none</span></span> removed call to pt/up/fe/bomberman/model/game/elements/Bomberman::setDirection &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_23'>23</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_23'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>moveBombermanDown<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanDownEmpty()]</span></span> removed call to pt/up/fe/bomberman/controller/game/BombermanController::moveBomberman &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_27'>27</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_27'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>moveBombermanLeft<br/><b>Killed by : </b>none</span></span> removed call to pt/up/fe/bomberman/model/game/elements/Bomberman::setDirection &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_28'>28</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_28'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>moveBombermanLeft<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanLeftEmpty()]</span></span> removed call to pt/up/fe/bomberman/controller/game/BombermanController::moveBomberman &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_32'>32</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_32'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>moveBombermanRight<br/><b>Killed by : </b>none</span></span> removed call to pt/up/fe/bomberman/model/game/elements/Bomberman::setDirection &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_33'>33</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_33'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>moveBombermanRight<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanRightEmpty()]</span></span> removed call to pt/up/fe/bomberman/controller/game/BombermanController::moveBomberman &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_37'>37</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_37'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>canMove<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanUpBomb()]</span></span> replaced boolean return with true for pt/up/fe/bomberman/controller/game/BombermanController::canMove &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>canMove<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanLeftEmpty()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_38'>38</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_38'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>canMove<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanUpBomb()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>canMove<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanUpBomb()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_39'>39</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_39'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>canMove<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanUpObstacle()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>canMove<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanUpObstacle()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_40'>40</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_40'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>canMove<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanRightWall()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_44'>44</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_44'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>moveBomberman<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanUpBomb()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_45'>45</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_45'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>moveBomberman<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanLeftEmpty()]</span></span> removed call to pt/up/fe/bomberman/model/game/elements/Bomberman::setPosition &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_46'>46</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_46'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>moveBomberman<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanRightEnemy()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>moveBomberman<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanUpFlame()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>moveBomberman<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanUpFlame()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_47'>47</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_47'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>moveBomberman<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanUpFlame()]</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>moveBomberman<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanUpFlame()]</span></span> removed call to pt/up/fe/bomberman/model/game/elements/Bomberman::setHp &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_48'>48</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_48'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>moveBomberman<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanLeftEmpty()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>moveBomberman<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getFlames()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_49'>49</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_49'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>moveBomberman<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getFlames()]</span></span> removed call to pt/up/fe/bomberman/controller/game/BombermanController::applyEffect &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_50'>50</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_50'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>moveBomberman<br/><b>Killed by : </b>none</span></span> removed call to pt/up/fe/bomberman/model/game/arena/Arena::removePowerup &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_56'>56</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_56'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>applyEffect<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getFlames()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_57'>57</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_57'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>applyEffect<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getBombs()]</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>applyEffect<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getBombs()]</span></span> removed call to pt/up/fe/bomberman/model/game/elements/Bomberman::setBombs &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_58'>58</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_58'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>applyEffect<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getFlames()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_59'>59</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_59'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>applyEffect<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getFlames()]</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>applyEffect<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getFlames()]</span></span> removed call to pt/up/fe/bomberman/model/game/elements/Bomberman::setFlames &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_60'>60</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_60'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>applyEffect<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getHealth()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_61'>61</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_61'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>applyEffect<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getSpeed()]</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>applyEffect<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getSpeed()]</span></span> removed call to pt/up/fe/bomberman/model/game/elements/Bomberman::setSpeed &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_62'>62</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_62'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>applyEffect<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getHealth()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_63'>63</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_63'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>applyEffect<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getWallpass()]</span></span> removed call to pt/up/fe/bomberman/model/game/elements/Bomberman::setWallpass &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_64'>64</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_64'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>applyEffect<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getHealth()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_65'>65</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_65'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>applyEffect<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getHealth()]</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>applyEffect<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getHealth()]</span></span> removed call to pt/up/fe/bomberman/model/game/elements/Bomberman::setHp &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_66'>66</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_66'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>applyEffect<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getBombpass()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_67'>67</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_67'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>applyEffect<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getBombpass()]</span></span> removed call to pt/up/fe/bomberman/model/game/elements/Bomberman::setBombpass &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_68'>68</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_68'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>applyEffect<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getFlamepass()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_69'>69</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_69'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>applyEffect<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getFlamepass()]</span></span> removed call to pt/up/fe/bomberman/model/game/elements/Bomberman::setFlamepass &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_73'>73</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_73'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>canCreateBomb<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:canCreateBombBomb()]</span></span> replaced boolean return with true for pt/up/fe/bomberman/controller/game/BombermanController::canCreateBomb &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>canCreateBomb<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>canCreateBomb<br/><b>Killed by : </b>none</span></span> Replaced integer subtraction with addition &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>canCreateBomb<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:canCreateBombEmpty()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_74'>74</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_74'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>canCreateBomb<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:canCreateBombEmpty()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_75'>75</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_75'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>canCreateBomb<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:canCreateBombObstacle()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_76'>76</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_76'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>canCreateBomb<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:canCreateBombWall()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_77'>77</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_77'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>canCreateBomb<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:canCreateBombPowerup()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_82'>82</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_82'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>step<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>step<br/><b>Killed by : </b>none</span></span> Replaced long subtraction with addition &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>step<br/><b>Killed by : </b>none</span></span> Replaced integer division with multiplication &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>step<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:useBombpass()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_83'>83</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_83'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>step<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_85'>85</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_85'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>step<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:canCreateBombObstacle()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_86'>86</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_86'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>step<br/><b>Killed by : </b>none</span></span> removed call to pt/up/fe/bomberman/controller/game/BombermanController::moveBombermanUp &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_87'>87</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_87'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>step<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:canCreateBombObstacle()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_88'>88</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_88'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>step<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:useBombpass()]</span></span> removed call to pt/up/fe/bomberman/controller/game/BombermanController::moveBombermanRight &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_89'>89</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_89'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>step<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:canCreateBombObstacle()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_90'>90</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_90'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>step<br/><b>Killed by : </b>none</span></span> removed call to pt/up/fe/bomberman/controller/game/BombermanController::moveBombermanDown &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_91'>91</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_91'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>step<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:canCreateBombObstacle()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_92'>92</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_92'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>step<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:useHealth()]</span></span> removed call to pt/up/fe/bomberman/controller/game/BombermanController::moveBombermanLeft &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_94'>94</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_94'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>step<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:canCreateBombEmpty()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>step<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:canCreateBombBomb()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@60f9dc7e_95'>95</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@60f9dc7e_95'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>step<br/><b>Killed by : </b>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:canCreateBombEmpty()]</span></span> removed call to pt/up/fe/bomberman/model/game/arena/Arena::addBomb &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+
+<li class='mutator'>BOOLEAN_FALSE_RETURN</li>
+
+<li class='mutator'>BOOLEAN_TRUE_RETURN</li>
+
+<li class='mutator'>CONDITIONALS_BOUNDARY_MUTATOR</li>
+
+<li class='mutator'>EMPTY_RETURN_VALUES</li>
+
+<li class='mutator'>INCREMENTS_MUTATOR</li>
+
+<li class='mutator'>INVERT_NEGS_MUTATOR</li>
+
+<li class='mutator'>MATH_MUTATOR</li>
+
+<li class='mutator'>NEGATE_CONDITIONALS_MUTATOR</li>
+
+<li class='mutator'>NULL_RETURN_VALUES</li>
+
+<li class='mutator'>PRIMITIVE_RETURN_VALS_MUTATOR</li>
+
+<li class='mutator'>VOID_METHOD_CALL_MUTATOR</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanUpEmpty()] (4 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:canCreateBombObstacle()] (7 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:canCreateBombEnemy()] (8 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanRightBomb()] (5 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanUpObstacle()] (4 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:canCreateBombWall()] (6 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanLeftEnemy()] (6 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanUpBomb()] (3 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:canCreateBombBomb()] (6 ms)</li><li>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:useBombpass()] (6 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanRightEnemy()] (5 ms)</li><li>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getFlames()] (3 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanUpWall()] (3 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanUpEnemy()] (5 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanUpFlame()] (4 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:canCreateBombEmpty()] (9 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanRightObstacle()] (5 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanLeftEmpty()] (4 ms)</li><li>pt.up.fe.bomberman.controller.game.BombControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombControllerTest]/[method:explodeBomb()] (8 ms)</li><li>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:useFlamepass()] (5 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanRightEmpty()] (5 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanRightFlame()] (6 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanLeftBomb()] (5 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanDownBomb()] (6 ms)</li><li>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getHealth()] (3 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanLeftFlame()] (5 ms)</li><li>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:useWallpass()] (6 ms)</li><li>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:useHealth()] (5 ms)</li><li>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getFlamepass()] (5 ms)</li><li>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:useBombs()] (7 ms)</li><li>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getWallpass()] (5 ms)</li><li>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getBombs()] (4 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanRightWall()] (3 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanDownEmpty()] (7 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanDownWall()] (5 ms)</li><li>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getSpeed()] (5 ms)</li><li>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:getBombpass()] (4 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:canCreateBombPowerup()] (6 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanLeftObstacle()] (5 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanDownFlame()] (6 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanDownObstacle()] (6 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanLeftWall()] (6 ms)</li><li>pt.up.fe.bomberman.controller.game.BombermanControllerTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.BombermanControllerTest]/[method:moveBombermanDownEnemy()] (8 ms)</li><li>pt.up.fe.bomberman.controller.game.PowerupEffectTest.[engine:junit-jupiter]/[class:pt.up.fe.bomberman.controller.game.PowerupEffectTest]/[method:useFlames()] (6 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.6.3
+
+</body>
+</html>
